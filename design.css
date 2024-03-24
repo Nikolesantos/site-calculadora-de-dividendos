@@ -1,0 +1,167 @@
+body{
+
+background-color: rgb(10, 10, 10);
+
+
+
+}
+/*Formatação da DIV do Cabeçalho do site*/
+#cabecalho{
+    max-width:100%;
+    height:auto;
+    background:rgb(255, 166, 0);
+    width:2000px;
+    height:500px;
+
+}
+
+/*Fortamatação da Imagem Principal*/
+.img_principal
+{
+
+     max-width:100%;
+     height: auto;
+     width:2000px;
+    height:500px;
+
+}
+
+/*Formatação da div e do texto principal*/
+.texto{
+    max-width:100%;
+    max-height:auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size:24px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:60pt;
+    text-align:left;
+    text-shadow:2px 2px 4px rgba(0,0,0,0,7);
+    
+    
+    
+}
+
+
+/* formatação de div da seção*/
+.secao{
+    width:2000px;
+    height:600px;
+
+    max-width:100%;
+    height:auto;
+    background:rgba(56, 55, 55, 0.856);
+    
+
+}
+/* formatação de posição:horizontal das imagens*/
+dt{
+    display:inline-block;
+
+
+}
+/* formatação somente das imagens*/
+.imagem_da_lista{
+    max-width:100%;
+    height:auto;
+    width:300px;
+    height:200px;
+    margin:10px;
+    margin-top:10px;
+    
+    
+}
+/* formatação de div e borda das imagens*/
+.div_borda{
+   max-width:100%;
+    padding:15px;
+    margin-top:30px;
+    margin-right:15px;
+    display:inline-block;
+    width:309px;
+    height:230px;
+    border-style:outset;
+    border-color:black;
+    
+}
+
+
+.artigos{ 
+
+        max-width:100%;
+        height:auto;
+       background:white;
+       height:900px;
+       padding:20px;
+       font-family:Roboto;
+       text-align:justify;/*justifica o texto*/
+       line-height:1,0;
+        font-size: 1.0em;/*tamanho da fonte*/
+}
+
+/*Formatação da div dos inputs da calculdora*/
+.div_input{
+        max-width:100%;/*deixa a imagem adaptavel*/
+        max-height:auto;
+        background:white;
+        height:100px;
+        width:400px;
+        float:center;
+        padding:30px;
+        border-color:rgba(48, 46, 46, 0.096);
+        border-style:outset;
+        margin-top:30px;
+        box-shadow:rgba(0,0,0,0,7);
+
+    
+
+}
+
+/*formatação dos inputs da calculdora*/
+.input01{
+       
+    max-width:100%;
+    max-height:auto;
+    margin-top:10px;
+
+}
+
+/*Formatação do botão da calculadora*/
+.butao{
+    max-width:100%;
+    max-height:auto;
+    margin-top:10px;
+     
+    
+    
+}
+/*formatçãao do rodape do site*/
+.rodape{
+        max-width:100%;
+        height: auto;
+       height:300px;
+       background:rgba(5, 49, 182, 0.945);
+       
+
+
+}
+
+
+/*formatação do texto do rodddape do site*/
+.textorodape{
+    max-width:100%;
+    max-height:auto;
+    padding:50px;
+    text-align:center;
+    color:white
+
+
+
+}
+
+
+
+

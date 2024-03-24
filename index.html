@@ -1,0 +1,188 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+<head>
+<meta charset ='utf-8'>
+<meta name='viewport' content="width=device-initia-scale=1.0">
+
+<!--Abaixo o Link de conexão do htm com css Externo-->
+<link rel="stylesheet" type="text/css" href="design.css">
+
+</head>
+
+
+<body>
+<!--inicio da DIV do cabeçalho do site-->
+<div id="cabecalho">
+   <main>
+    <img src="imagen_principal.jpg" alt="" class="img_principal">
+    
+    <!--div do titulo PRINCIPAL-->
+   <div class="texto">
+    Use a Calculadora de Dividendos
+ </div>
+   <!--fim ds DIV do titulo principal--> 
+   </main>
+</div>
+<!--fim da DIV do cabeçalho-->
+<!--#########################################-->  
+
+<!--Inicio da div seção-->
+<div class="secao">
+<section>
+    <center>
+    <!--Inicio da Lista de sequencia imagens-->
+    <dl>
+    <!--Inicio da div BORDA da sequencia de imagens-->
+    <div class="div_borda">
+        <dt>
+            <img src="img02.jpg" alt="" class="imagem_da_lista">
+        </dt>
+        </div>
+
+        <div class="div_borda">
+            <dt>
+                <img src="img03.jpg" alt=""class="imagem_da_lista">
+            </dt>  
+        </div>
+
+        <div class="div_borda">
+             <dt>
+                <img src="img04.jpg" alt=""class="imagem_da_lista">
+            </dt>
+        </div>
+        <!--Fim da div de borda da sequencia de imagens-->
+    </dl>
+    <!--Fim da Lista de sequencia de imagens-->
+</center>
+</section>
+</div>
+<!--Fim da DIV seção-->
+
+<!--Inicio da div ARTIGOS-->
+<div class="artigos">
+<article>
+    <center>
+        <!--div dos inputs e os elementos inputs-->
+        <div class="div_input">
+                <label>Lucro Líquido
+                         <input  class="input01"id="entrada01"type="text">
+                </label>
+                    <br>
+                        <label>
+                                Preço da Ação
+                        </label>
+                                <input class="input01" id="entrada02" type="text">
+                        
+    <center>
+        <!--botao-->
+        <input  class="butao" type="button" value="Calcular" onclick="Calculo()">
+    </center>
+    <center>
+        <label> Dividendos</label>
+        <input type="text" class="input01"  value="1" id="saida">
+    </center>
+        </div>
+<!--fim do código da div e dos inputs  calculadora -->
+    </center>
+
+<!--Inicio do conteudo do site-->
+
+<!--segundo titulo-->
+<h2>Preço Líquido</h2>
+
+<p><!--primeiro paragrafo-->
+    O preço líquido de um investimento em ações é o valor final que um investidor paga ou recebe após todas as deduções e acréscimos. Aqui está uma descrição detalhada:
+</p><!--fim do primeiro paragrafo-->
+
+<!--Segundo do titulo-->
+<h3>Preço Bruto  vs. Preço Líquido</h3>
+
+<!--Segundo paragrafo  do site-->
+<p style="line-height:1,5;">
+    O preço bruto é o valor inicial de uma ação, conforme listado na bolsa de valores.
+    O preço líquido é o preço bruto ajustado por custos adicionais ou descontos, como comissões de corretagem, impostos, e outras taxas.
+<!--fim do Segundo paragafo-->
+</p>
+
+<!-- Terceiro Titulo do site-->
+<h3>Cálculo do Preço Líquido:</h3>
+<!--Inicio do Terceiro Paragrafo-->
+<p  class="Terceiro_paragrafo">
+    Para calcular o preço líquido de um investimento em ações, você deve considerar:
+    Preço de Compra/Venda: O valor pelo qual a ação é negociada.
+    Comissões e Taxas: Custos cobrados pela corretora para executar a transação.
+    Impostos: Como o Imposto sobre Operações Financeiras (IOF) ou o Imposto de Renda (IR) sobre ganhos de capital.
+
+    A fórmula básica para calcular o preço líquido de compra ou venda de ações seria:
+    Preço líquido=Preço da ação Quantidade±Comissões e Taxas±Impostos.
+<br>
+<!--Subtitulo do terceiro paragrafo-->
+<b>Importância do Preço Líquido:</b>
+
+    O preço líquido é crucial para determinar o verdadeiro custo de um investimento e o lucro real obtido.
+    Investidores usam o preço líquido para avaliar a eficiência de suas estratégias de investimento e o desempenho de suas carteiras.
+    Considerações Finais:
+    O preço líquido pode variar dependendo da corretora e das condições de mercado.
+    Investidores devem sempre revisar o preço líquido para entender melhor o impacto das taxas e impostos em seus investimentos.
+</p>
+<!--fim do conteudo do 'terceiro paragrafo'-->
+
+<!--Inicio do Quarto Titulo -->
+<h3>Quais são os preços das ações</h3>
+<!--fim do quarto titulo-->
+
+<!--Inicio do conteúdo do  Quarto paragrafo -->
+<p style="line-height:1,5;text-align: justify;">
+    O preço de uma ação é o valor pelo qual ela é negociada no mercado financeiro. Esse preço pode flutuar ao longo do dia devido a diversos fatores, como oferta e demanda, notícias sobre a empresa ou seu setor, e condições econômicas gerais1. O preço é o que os investidores estão dispostos a pagar por uma ação em um determinado momento.
+</p>
+<!--fim do conteudo do  Paragrafo-->
+</article>
+</div>
+<!--Fim da Div ARTIGOS-->
+
+<!--Inicio da div do RODAPÉ DO SITE-->
+<div class="rodape">
+<footer>
+    <div class="textorodape">
+        <h5>CONTATO</h5>
+        <hr>
+        <h4>Instagram : @dev.codeoficial</h4>
+        <h4>E-mail: dnikole05@gmail.com</h4>
+        <h6>2024</h6>
+
+
+    </div>
+
+
+
+
+</div>
+<!--Fim da div do Rodapé do site-->
+<script>
+    
+var Dividendos;
+var Investido;
+var Acao;
+var Unidade=100;
+var resultado;
+
+
+    
+
+function Calculo(){
+    Investido =Number.parseFloat(document.getElementById('entrada01').value);
+    Acao=Number.parseFloat(document.getElementById('entrada02').value);
+
+    Dividendos= (Investido / Acao)* Unidade;
+    document.getElementById('saida').value = Dividendos;
+
+    
+}
+Calculo()
+
+
+
+
+</script>
+</body>
+ </html>
